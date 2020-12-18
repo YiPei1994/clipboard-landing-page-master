@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+  padding: 20px;
+  line-height: 2.5rem;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  padding: 10px 0;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+li {
+  list-style: none;
+  padding: 15px 0;
+}
+/* colors */
+
+$trong-Cyan: hsl(171, 66%, 44%);
+$ight-Blue: hsl(233, 100%, 69%);
+
+$Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$Grayish-Blue: hsl(201, 11%, 66%);
+img {
+  padding: 30px;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+  padding: 15px 50px;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 10px auto;
+}
+.mac {
+  background-color: hsl(233, 100%, 69%);
+  padding: 15px 50px;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 10px auto;
+}
+.container {
+  padding: 80px 30px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.header {
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.wrapper {
+  padding: 0 30px;
+}
+.content-holder {
+  padding: 0 30px;
+}
+.computer {
+  height: 260px;
+}
+
+.logos {
+  padding: 50px;
+}
+
+.footer {
+  background-color: rgba(240, 240, 240, 0.883);
+  .logo {
+    height: 80px;
+    padding: 20px 100px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    background-image: url("/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .img {
+      margin: 0;
+    }
+    .computer {
+      margin: 0;
+      height: 500px;
+      width: 800px;
+      position: relative;
+      left: 0;
+    }
+
+    .text {
+      width: 20%;
+      margin-left: 50px;
+    }
+  }
+  .content-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr auto;
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center start;
+    }
+    .social {
+      img {
+        padding: 20px 10px;
+      }
+    }
+  }
+}
